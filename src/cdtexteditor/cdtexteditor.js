@@ -3,6 +3,8 @@ let CDTE_DICTIONARIES = [];
 let CDTE_PREDICTIVE_PHRASES = [];
 let CDTE_EDITORS = [];
 
+let CDTE_test = false;
+
 class CDTextEditor {
     /**
      * Create an CDTextEditor entity.
@@ -594,7 +596,6 @@ class CDTextEditor {
             word = word.toLowerCase().trim();
             let wordlen = word.length;
             let variants = [];
-            
             if ('"'+word+'"' in dict) {
                 variants = dict['"'+word+'"'];
                 let options = {
@@ -610,6 +611,8 @@ class CDTextEditor {
                     completeSingle: false
                 };
                 this.editor.showHint(options);
+            } else {
+                this.editor.showHint(null);
             }
         }.bind(this));
     }

@@ -40,8 +40,8 @@ The simplest way to create ***single*** editor on the web-page:
 
 	```HTML
     <script>
-    	let editor = new CDTextEditor(div_id).setup({"autoPreview": true}); 
-    	// div_id - id of the selected div; .setup() method is not required.
+    	let editor = new CDTextEditor("div_id").setup({"autoPreview": true}); 
+    	// "div_id" - id of the selected div; .setup() method is not required.
     </script>
     ```
 
@@ -113,7 +113,7 @@ Make the line between editor and viewer draggable (make viewer resizable).
 
 ### Create multiple editors on the same page
 #### CDTextEditor.create([...])
-This method allows you to create multiple editors on the same page, avoiding unnecessary downloads of dictionaries, [jQuery/jQueryUI](#jqueryjquery-ui) libraries, etc. (ex.: you need to create three editors with usage of `en_US` dictionary, in that case, usage of [editor.setup({...})](#createsingleeditor) may cause unnecessary loading of dictionary twice)
+This method allows you to create multiple editors on the same page, avoiding unnecessary downloads of dictionaries, [jQuery/jQueryUI](#jqueryjquery-ui) libraries, etc. (ex.: you need to create three editors with usage of `en_US` dictionary, in that case, usage of [editor.setup({...})](#create-single-editor) may cause unnecessary loading of dictionary twice)
 
 It creates editors asynchronically one by one. To get access to `CDTextEditor` objects you should use global variable `CDTE_EDITORS[id]` where `id` is an unique id of the editor.
 

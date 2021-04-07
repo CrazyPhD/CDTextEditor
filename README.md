@@ -248,7 +248,7 @@ I would like to thank all the people involved in the following projects for thei
 * [CodeMirror](https://codemirror.net/) - a browser code editor library.
 * [showdownjs/showdown](https://github.com/showdownjs/showdown/) - a Markdown to HTML converter.
 * [cfinke/Typo.js](https://github.com/cfinke/Typo.js/) - a spellchecker that uses Hunspell-style dictionaries.
-* [Project Gutenberg](https://www.gutenberg.org/) - an eBook library, where were found amazing book "Fifteen Thousand Useful Phrases" by Greenville Kleiser, where [almost 6000 phrases](https://github.com/CrazyPhD/CDTextEditor/blob/master/src/dict/en_phrases.txt) were taken from.
+* [Project Gutenberg](https://www.gutenberg.org/) - an eBook library, where were found amazing book "Fifteen Thousand Useful Phrases" by Greenville Kleiser, where [almost 6000 phrases](https://github.com/CrazyPhD/CDTextEditor/blob/master/src/cdtexteditor/assets/dict/en_phrases.txt) were taken from.
 * [wooorm/dictionaries](https://github.com/wooorm/dictionaries) - a huge collection of Hunspell-style dictionaries.
 * [jQuery](https://jquery.com/) - a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.
 * [jQueryUI](https://jqueryui.com/) - a set of user interface interactions, effects, widgets, and themes built on top of jQuery. 

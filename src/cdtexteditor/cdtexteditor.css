@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Consolas";
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Consolas.eot');
+    src: url('assets/fonts/Consolas.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Consolas.woff') format('woff'),
+        url('assets/fonts/Consolas.woff2') format('woff2'),
+        url('assets/fonts/Consolas.ttf') format('truetype');
+}
+
+.CDTextEditor_workbench {
+    border: 1px #ccc solid;
+    font-family: "Consolas";
+    min-height: 200px;
+    min-width: 610px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.CDTextEditor_header {
+    background: linear-gradient(180deg, #bbb, #fff , #bbb);
+    height: 30px;
+    width: 100%;
+}
+
+.CDTextEditor_header .logo {
+    background-image: url(assets/logo.png);
+    background-size: cover;
+    float: left;
+    height: 30px;
+    width: 29px;
+}
+
+.CDTextEditor_button {
+    border-left: 1px #aaa solid;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+}
+
+.CDTextEditor_button:hover {
+    background: linear-gradient(180deg, #aaa, #eee , #aaa);
+    cursor: pointer;
+}
+
+.CDTextEditor_wrapper {
+    overflow: hidden;
+}
+
+.CDTextViewer {
+    background-color: #FFFFFF;
+    border-left: 1px #ccc solid;
+    display: none;
+    float: right;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+}
+
+.CDTextEditor_inputfile {
+    display: none;
+}
+
+.CDTextEditor_inputfile_label {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 12px;
+}
+
+.CDTextEditor_autopreview_block {
+    float: right;
+    line-height: 30px;
+    padding-right: 5px;
+}
+
+.CDTextEditor_footer {
+    background-color: #f7f7f7;
+    border-top: 1px #ccc solid;
+    font-size: 10px;
+    line-height: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.CDTextEditor_footer_spellcheck {
+    float: right;
+    padding-right: 15px;
+}
+
+.CDTextEditor_spellcheck_menu {
+    background-color: #eee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    display: none;
+    position: absolute;
+    z-index: 9999;
+}
+
+.CodeMirror .cm-spell-error { 
+	background-image: url("assets/typo-underline.gif");
+	background-position: bottom;
+	background-repeat: repeat-x;
+}

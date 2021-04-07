@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script src="dist/cdtexteditor.min.js"></script>
+        <link rel="stylesheet" href="dist/cdtexteditor.min.css">
+        <title>CDTextEditor Demo (Multiple editors)</title>
+    </head>
+    <body>
+        <h1>CDTextEditor: Multiple editors test</h1>
+        <h2>Note: jQuery and jQueryUI are not preloaded on this page. Also the following editors have same dictionaries.<br/>See console log and Network activity log.</h2>
+        <h3>Test editor 1: {spellchecking: en_US, predictive: en_phrases.txt, flex: true}</h3>
+        <div id="workbench" style="width: 800px; height: 400px;"></div>
+        <h3>Test editor 2: {spellchecking: [en_US, de_DE], predictive: en_phrases.txt, resizable: true, flex: true, autopreview: true, maxSize: [900, 500]}</h3>
+        <div id="workbench1" style="width: 100px; height: 100px;"></div>
+        <h3>Test editor 3: {spellchecking: de_DE, draggable: true}</h3>
+        <div id="workbench2" style="width: 700px; height: 350px;"></div>
+        <script>
+           CDTextEditor.create([
+                {
+                    id: "workbench",
+                    options: {
+                        predictive: "./dist/assets/dict/en_phrases.txt",
+                        flex: true,
+                        spellchecking: {
+                            url: "./dict/",
+                            loc: [
+                                "en_US"
+                            ]
+                        }
+                    }
+                },
+               {
+                    id: "workbench1",
+                    options: {
+                        autoPreview: true,
+                        predictive: "./dist/assets/dict/en_phrases.txt",
+                        resizable: true,
+                        flex: true,
+                        maxSize: {
+                            w: 900, 
+                            h: 500
+                        },
+                        spellchecking: {
+                            url: "./dict/",
+                            loc: [
+                                "en_US",
+                                "de_DE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    id: "workbench2",
+                    options: {
+                        draggable: true,
+                        spellchecking: {
+                            url: "./dict/",
+                            loc: [
+                                "de_DE"
+                            ]
+                        }
+                    }
+                }
+            ]);
+        </script>
+    </body>
+</html>

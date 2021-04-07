@@ -13,7 +13,7 @@
 * [License](#license)
 ***
 ## Installation
-The project uses [grunt](https://gruntjs.com) for building.
+The project uses [grunt](https://gruntjs.com) for building. Alternatively, you can download the latest build from [here](https://github.com/CrazyPhD/CDTextEditor/tree/master/dist).
 
 1. Clone git repository:
 
